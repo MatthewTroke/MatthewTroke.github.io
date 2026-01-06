@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Mail, Github, Linkedin, ExternalLink } from 'lucide-svelte';
+	import { Mail, Github, Linkedin, ExternalLink, Cloud } from 'lucide-svelte';
 	import Button from '$lib/components/ui/button.svelte';
 </script>
 
@@ -165,11 +165,25 @@
 								</div>
 
 								<!-- Description -->
-								<p class="text-sm sm:text-base text-muted-foreground/80 leading-relaxed max-w-3xl">
-									Passion project. Real-time web application card game where users can create and share their own decks, and play with others in real-time multiplayer games. Uses artificial intelligence to generate
-									unique decks to play real-time card games using websockets. Completely custom design and development.
-									Integration with Stripe for processing premium currency.
-								</p>
+								<ul
+									class="space-y-2.5 sm:space-y-3 text-sm sm:text-base text-muted-foreground/80 leading-relaxed list-disc list-outside ml-4 sm:ml-6 max-w-3xl"
+								>
+									<li>
+										Passion project: real-time web application card game where users can create
+										and share their own decks, and play with others in real-time multiplayer
+										games.
+									</li>
+									<li>
+										Uses artificial intelligence to generate unique decks to play real-time card
+										games using websockets.
+									</li>
+									<li>Completely custom design and development.</li>
+									<li>Integrates Stripe for processing premium currency.</li>
+									<li>
+										Self-hosted infrastructure using Oracle Cloud and AWS for compute, networking,
+										and storage.
+									</li>
+								</ul>
 
 								<!-- Technologies -->
 								<div class="pt-2">
@@ -193,6 +207,32 @@
 												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
 											/>
 											<span>Golang</span>
+										</a>
+										<a
+											href="https://www.docker.com"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<img
+												src="https://cdn.simpleicons.org/docker/2496ED"
+												alt="Docker"
+												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
+											/>
+											<span>Docker</span>
+										</a>
+										<a
+											href="https://temporal.io"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<img
+												src="https://cdn.simpleicons.org/temporal/000000"
+												alt="Temporal"
+												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
+											/>
+											<span>Temporal</span>
 										</a>
 										<a
 											href="https://svelte.dev"
@@ -247,19 +287,6 @@
 											<span>Nginx</span>
 										</a>
 										<a
-											href="https://www.docker.com"
-											target="_blank"
-											rel="noopener noreferrer"
-											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
-										>
-											<img
-												src="https://cdn.simpleicons.org/docker/2496ED"
-												alt="Docker"
-												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
-											/>
-											<span>Docker</span>
-										</a>
-										<a
 											href="https://www.postgresql.org"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -271,6 +298,24 @@
 												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
 											/>
 											<span>PostgreSQL</span>
+										</a>
+										<a
+											href="https://www.oracle.com/cloud/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<Cloud class="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+											<span>Oracle Cloud</span>
+										</a>
+										<a
+											href="https://aws.amazon.com/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<Cloud class="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+											<span>AWS</span>
 										</a>
 									</div>
 								</div>
@@ -406,6 +451,19 @@
 												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
 											/>
 											<span>Golang</span>
+										</a>
+										<a
+											href="https://www.docker.com"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<img
+												src="https://cdn.simpleicons.org/docker/2496ED"
+												alt="Docker"
+												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
+											/>
+											<span>Docker</span>
 										</a>
 									</div>
 								</div>
@@ -562,6 +620,19 @@
 												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
 											/>
 											<span>Jira</span>
+										</a>
+										<a
+											href="https://www.docker.com"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-md bg-muted/50 hover:bg-primary/10 hover:text-primary border border-border/50 hover:border-primary/50 transition-all text-xs sm:text-sm text-muted-foreground hover:text-primary"
+										>
+											<img
+												src="https://cdn.simpleicons.org/docker/2496ED"
+												alt="Docker"
+												class="w-3.5 h-3.5 sm:w-4 sm:h-4"
+											/>
+											<span>Docker</span>
 										</a>
 									</div>
 								</div>
